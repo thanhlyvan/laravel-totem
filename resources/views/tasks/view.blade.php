@@ -35,11 +35,11 @@
         </li>
         <li>
             <span class="uk-text-muted uk-float-right">Created At</span>
-            <span class="uk-float-left">{{$task->created_at->toDateTimeString()}}</span>
+            <span class="uk-float-left">{{$task->created_at}}</span>
         </li>
         <li>
             <span class="uk-text-muted uk-float-right">Updated At</span>
-            <span class="uk-float-left">{{$task->updated_at->toDateTimeString()}}</span>
+            <span class="uk-float-left">{{$task->updated_at}}</span>
         </li>
         <li>
             <span class="uk-text-muted uk-float-right">Email Notification</span>
@@ -113,7 +113,7 @@
                 <tbody>
                 @forelse($results = $task->results()->orderByDesc('created_at')->paginate(10) as $result)
                     <tr>
-                        <td>{{$result->ran_at->toDateTimeString()}}</td>
+                        <td>{{$result->ran_at}}</td>
                         <td>{{ number_format($result->duration / 1000 , 2)}} seconds</td>
                         <td>
                             <task-output output="{{nl2br($result->result)}}"></task-output>
