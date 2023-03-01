@@ -38,6 +38,10 @@ class Task extends TotemModel
         'run_in_background',
     ];
 
+    protected $casts = [
+        'is_active' => 'integer',
+    ];
+
     /**
      * The accessors to append to the model's array form.
      *
