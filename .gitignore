@@ -6,3 +6,8 @@ _ide_helper.php
 .DS_Store
 .idea
 *.sketch
+/tests/00_report_unit_test
+/tests/02_coverage_cache
+.phpunit.cache
+.phpunit.result.cache
+laravel-*.log
