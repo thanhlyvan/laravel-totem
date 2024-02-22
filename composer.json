@@ -18,7 +18,7 @@
   "require": {
     "php": "^8.0.2",
     "ext-json": "*",
-    "doctrine/dbal": "^4.0",
+    "doctrine/dbal": "^3.0",
     "illuminate/bus": "^8.11|^9.0|^10.0",
     "illuminate/console": "^8.11|^9.0|^10.0",
     "illuminate/contracts": "^8.11|^9.0|^10.0",
